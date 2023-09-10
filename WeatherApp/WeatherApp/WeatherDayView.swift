@@ -20,9 +20,9 @@ struct WeatherDayView: View {
                 .foregroundColor(.white)
 
             Image(systemName: imageName)
-                .symbolRenderingMode(.palette)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
-                .foregroundStyle(.pink, .orange, .green)
+//                .foregroundStyle(.pink, .orange, .green)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
 

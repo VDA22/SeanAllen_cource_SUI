@@ -20,6 +20,6 @@ struct BackgroundView: View {
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         )
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea(.all)
     }
 }

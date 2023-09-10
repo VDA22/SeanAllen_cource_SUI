@@ -16,7 +16,9 @@ struct WeatherButtonText: View {
     var body: some View {
         Text(title)
             .frame(width: 280, height: 50)
-            .background(backgroundColor.gradient)
+        // iOS 16
+//            .background(backgroundColor.gradient)
+            .background(backgroundColor)
             .foregroundColor(foregroundColor)
             .font(.system(size: 20, weight: .bold, design: .default))
             .cornerRadius(10)

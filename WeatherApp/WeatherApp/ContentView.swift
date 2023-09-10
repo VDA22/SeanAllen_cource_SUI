@@ -32,17 +32,21 @@ struct ContentView: View {
                         isNight.toggle()
                     }
                 } label: {
-                    WeatherButtonText(title: "Change Day Time", backgroundColor: .mint, foregroundColor: .blue)
+//                    WeatherButtonText(title: "Change Day Time", backgroundColor: .mint, foregroundColor: .blue)
+                    WeatherButtonText(
+                        title: "Change Day Time",
+                        backgroundColor: .white,
+                        foregroundColor: .blue
+                    )
                 }
 
                 Spacer()
-
             }
         }
     }
 
     private func makeWeekStack() -> some View {
-        return HStack(spacing: 20) {
+        HStack(spacing: 20) {
             WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature: 74)
             WeatherDayView(dayOfWeek: "WED", imageName: "sun.max.fill", temperature: 88)
             WeatherDayView(dayOfWeek: "THU", imageName: "wind.snow", temperature: 55)

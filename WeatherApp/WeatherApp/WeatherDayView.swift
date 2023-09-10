@@ -20,9 +20,12 @@ struct WeatherDayView: View {
                 .foregroundColor(.white)
 
             Image(systemName: imageName)
-                .symbolRenderingMode(.multicolor)
-                .resizable()
+                .renderingMode(.original)
+            // iOS 15
+////                .renderingMode(.original)
+//                .symbolRenderingMode(.multicolor)
 //                .foregroundStyle(.pink, .orange, .green)
+                .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
 
